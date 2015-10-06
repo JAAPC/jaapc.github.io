@@ -7,8 +7,9 @@ body {
   font-weight:300;
 }
 .navbar {
-  display="inline-block"
-  float="left"
+  display:"inline-block";
+  float:"left";
+  list-style-type: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
