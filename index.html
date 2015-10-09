@@ -1,61 +1,409 @@
-<!doctype html>
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>JAA-PC NY by JAAPC</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Etusivu | JAA-PC</title>
+    <!-- normalizar -->
+    <link href="css/normalize.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cabin:400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--fontawesome-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!--animation-->
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <!--main css-->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--main css-->
+    <link href="css/responsive.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <div class="navbar">
-    <ul>
-          <a href="index.html"><li>Etusivu</li></a>
-          <a href="info.html"><li>Tietoja</li></a>
-          <a href="contact.html"><li>Ota yhteytä</li></a>
-        </ul>
-  </div>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>JAA-PC NY</h1>
-        <p>Tietokoneita jokaiseen käyttötarkoitukseen</p>
-      </header>
-      <section>
-        <h3>
-<h1>Tietokonepakettien suunnittelu</h1>
+</head>
 
-<p>Tarvitset sitten kovemman luokan pelikoneen tai kevyemmän paketin netissä surffailuun, saamme suunniteltua sinulle juuri oikean paketin omalla budjetillasi. </p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+<body>
+    <div id="preloader">
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw margin-bottom"></i>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
     
-  </body>
+    <header id="header_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="logo">
+                        <h2><a href="index.html">Jaa-PC NY</a></h2>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="mainmenu">
+                        <div class="navbar navbar-nobg">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#">Etusivu</a>
+                                    </li>
+                                    <li><a href="#">Tietoa meistä</a>
+                                    </li>
+                                    <li><a href="#">Tuotteet</a>
+                                    </li>
+                                    <li><a href="#">Ota yhteyttä</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header_area_text">
+                        <h2 class="wow slideInDown" data-wow-duration="2s">Tietokonepakettien suunnittelua ja kasausta juuri kuten haluat</h2>
+                        <p class="wow slideInUp">Tarvitset sitten raskaan-sarjan pelikonetta tai kevyempää pakettia netissä surffailuun, saamme tehtyä juuri sinulle sopivan paketin </p>
+                        <a class="wow slideInUp" data-wow-duration="2s" href="">Ota yhteyttä</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header top area -->
+
+
+    <section id="features_area" class="section_padding text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Yrityksestämme</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="single_feature wow slideInUp" data-wow-duration="1s">
+                        <i class="fa fa-user"></i>
+                        <h3>Henkilökohtaisuus</h3>
+                        <p>Jokainen asiakas on meille tärkeä, ja siksi haluamme ottaa asiat henkilökohtaisesti. Räätälöimme jokaisen konepaketin asiakkaiden toiveiden mukaisesti joten saat juuri sitä mitä haluat. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="single_feature wow slideInUp" data-wow-duration="2s">
+                        <i class="fa fa-flag"></i>
+                        <h3>Hinta</h3>
+                        <p>AISDJAIOSDHAOSIDJASIODJASIODJ jotain paskaa
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="single_feature wow slideInUp" data-wow-duration="3s">
+                        <i class="fa fa-paint-brush"></i>
+                        <h3>paskaa</h3>
+                        <p>jotain paskaa
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end features area -->
+
+    <section id="story_area" class="section_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="story_image wow slideInLeft" data-wow-duration="2s">
+                        <img src="images/bg.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="story_text wow slideInRight" data-wow-duration="2s">
+                        <h2>Tietoja meistä</h2>
+                        <p>joku paska tarina</p>
+                        <p>allah u snackbar</p>
+                        <a href="">Lisää yrityksestä balskdaslkdans</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of story area -->
+
+
+    <section id="clients_say_area" class="section_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Jotai paskaa</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="clients_say wow slideInUp">
+                        <p>paska työntekijä</p>
+                        <div class="clients_say_list fix">
+                            <div class="say floatleft">
+                                <h5>Aatu Tirkkonen</h5>
+                                <h6>markkinointijäbä joka ei tee mitää työtä Kappameemi</h6>
+                            </div>
+                            <div class="c_img floatright">
+                                <img src="images/client.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="clients_say wow slideInUp">
+                        <p>tyä maan rakenus virma ukko</p>
+                        <div class="clients_say_list fix">
+                            <div class="say floatleft">
+                                <h5>Antot Vuohelainen</h5>
+                                <h6>Tyä ukko</h6>
+                            </div>
+                            <div class="c_img floatright">
+                                <img src="images/client.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="clients_say wow slideInUp">
+                        <p>Vuoden työntekijä 2005-2018</p>
+                        <div class="clients_say_list fix">
+                            <div class="say floatleft">
+                                <h5>Jere Arola</h5>
+                                <h6>Master CEO of all</h6>
+                            </div>
+                            <div class="c_img floatright">
+                                <img src="images/client.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="clients_say wow slideInUp">
+                        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+                        <div class="clients_say_list fix">
+                            <div class="say floatleft">
+                                <h5>Pete kaupinen</h5>
+                                <h6>maan siirto virma ukko</h6>
+                            </div>
+                            <div class="c_img floatright">
+                                <img src="images/client.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end clients say area -->
+
+    <section id="Experience_area" class="section_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="experience wow slideInLeft">
+                        <h2>Our Experience</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem.</p>
+                        <a href="">View case studies</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skills">
+                       <h2>Skills</h2>
+                        <div class="skill_right">
+
+                            <p>C++ development</p>
+                            <div class="progress wow slideInUp">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                    60%
+                                </div>
+                            </div>
+
+                            <p>Photoshop</p>
+                            <div class="progress wow slideInUp">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                    60%
+                                </div>
+                            </div>
+
+                            <p>.Net</p>
+                            <div class="progress wow slideInUp">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                    60%
+                                </div>
+                            </div>
+
+                            <p>Argular js</p>
+                            <div class="progress wow slideInUp">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    60%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end experience area -->
+
+    <section id="blog_area" class="section_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="single_blog wow slideInUp" data-wow-duration="1s">
+                        <img class="img-responsive" src="images/1.jpg" alt="">
+                        <h2>Cache Invalidation StrategiesWith Varnish Cache</h2>
+                        <div class="comment_area fix">
+                            <div class="date floatleft">
+                                <p><span><i class="fa fa-calendar-o"></i></span> March 4, 2014</p>
+                            </div>
+                            <div class="comment floatright">
+                                <p><span><i class="fa fa-comments"></i></span>2 comments</p>
+                            </div>
+                        </div>
+                        <p>Shortly thereafter, I was working with RetailMeNot, tasked with designing its iOS and Android app tutorial. The product team wanted to make sure hat users were clear about the value</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="single_blog wow slideInUp" data-wow-duration="2s">
+                        <img class="img-responsive" src="images/2.jpg" alt="">
+                        <h2>Cache Invalidation StrategiesWith Varnish Cache</h2>
+                        <div class="comment_area fix">
+                            <div class="date floatleft">
+                                <p><span><i class="fa fa-calendar-o"></i></span> March 4, 2014</p>
+                            </div>
+                            <div class="comment floatright">
+                                <p><span><i class="fa fa-comments"></i></span>2 comments</p>
+                            </div>
+                        </div>
+                        <p>Shortly thereafter, I was working with RetailMeNot, tasked with designing its iOS and Android app tutorial. The product team wanted to make sure hat users were clear about the value</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="single_blog wow slideInUp" data-wow-duration="3s">
+                        <img class="img-responsive" src="images/3.jpg" alt="">
+                        <h2>Cache Invalidation StrategiesWith Varnish Cache</h2>
+                        <div class="comment_area fix">
+                            <div class="date floatleft">
+                                <p><span><i class="fa fa-calendar-o"></i></span> March 4, 2014</p>
+                            </div>
+                            <div class="comment floatright">
+                                <p><span><i class="fa fa-comments"></i></span>2 comments</p>
+                            </div>
+                        </div>
+                        <p>Shortly thereafter, I was working with RetailMeNot, tasked with designing its iOS and Android app tutorial. The product team wanted to make sure hat users were clear about the value</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end blog area -->
+
+    <section id="caal_to_action_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="call_to_action_text wow slideInLeft" data-wow-duration="2s">
+                        <h2>Are you ready to go?</h2>
+                        <p>Here the call to action area. Lorem ipsum dolor sit amet and click to the button</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="call_project text-right wow slideInRight" data-wow-duration="2s">
+                        <a href="">Start your project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end call to action area -->
+
+
+    <footer id="footer_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="company_logo wow slideInDown">
+                        <h2>companyname</h2>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="company_address wow slideInDown">
+                        <h2>New York</h2>
+                        <p>Address goes here in a one or two lines, maybe lorem ipsum
+                        </p>
+                        <h3>
+                            +44 800 800 90
+                            info@domen.com </h3>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="company_address wow slideInDown">
+                        <h2>london</h2>
+                        <p>Address goes here in a one or two lines, maybe lorem ipsum
+                        </p>
+                        <h3>
+                            +44 800 800 90
+                            info@domen.com </h3>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="company_address wow slideInDown">
+                        <h2>madrid</h2>
+                        <p>Address goes here in a one or two lines, maybe lorem ipsum
+                        </p>
+                        <h3>
+                            +44 800 800 90
+                            info@domen.com </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- main jQuery-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- wow js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>
